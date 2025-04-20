@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>M NAMITHA | Portfolio</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom, #330000, #1a0000);
+      color: #f8f8f8;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    header {
+      background-color: #1a0000;
+      padding: 2rem 1rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .profile-img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 3px solid #ff4d4d;
+      margin-bottom: 1rem;
+    }
+
+    .name-highlight {
+      background: linear-gradient(135deg, rgba(139, 0, 0, 0.3), rgba(255, 255, 255, 0.1));
+      padding: 10px 20px;
+      border-radius: 20px;
+      z-index: 1;
+      max-width: 90%;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 0.2rem;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+    }
+    header p { font-size: 1.3rem; max-width: 90%; text-shadow: 1px 1px 4px rgba(0,0,0,0.6); }
+    .tagline { font-size: 1rem; color: #ff9999; margin-top: 0.5rem; }
+
+    section {
+      padding: 4rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+      background-color: #330000;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+      margin-bottom: 2rem;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 1s ease forwards;
+    }
+    section:nth-of-type(1) { animation-delay: 0.3s; }
+    section:nth-of-type(2) { animation-delay: 0.6s; }
+    section:nth-of-type(3) { animation-delay: 0.9s; }
+    section:nth-of-type(4) { animation-delay: 1.2s; }
+    section:nth-of-type(5) { animation-delay: 1.5s; }
+
+    @keyframes fadeInUp { to { opacity: 1; transform: translateY(0); } }
+
+    .section-title { font-size: 2rem; margin-bottom: 1.5rem; color: #ff4d4d; text-align: center; }
+
+    .education, .learning, .projects, .soft-skills, .certifications {
+      display: flex;
+      justify-content: space-around;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .education div,
+    .learning div,
+    .projects div,
+    .soft-skills div,
+    .certifications div {
+      background: linear-gradient(to bottom right, #660000, #330000);
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(255,255,255,0.05);
+      flex: 1;
+      min-width: 250px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .education div:hover,
+    .learning div:hover,
+    .projects div:hover,
+    .soft-skills div:hover,
+    .certifications div:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 20px rgba(255,255,255,0.1);
+    }
+
+    .contact-info {
+      text-align: center;
+      background-color: #330000;
+      border-radius: 12px;
+      padding: 2rem;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+      margin: auto 2rem 2rem;
+      max-width: 1000px;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 1s ease forwards;
+      animation-delay: 1.8s;
+    }
+    .contact-info p { margin: 0.5rem 0; font-size: 1.1rem; }
+    .contact-info a { color: #ff9999; }
+
+    h3 { color: #ff6666; font-size: 1.5rem; margin-bottom: 0.5rem; }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #1a0000;
+      font-size: 0.9rem;
+      color: #ffcccc;
+    }
+
+    a:hover { text-decoration: underline; }
+
+    @media (max-width: 600px) {
+      header h1 { font-size: 2.2rem; }
+      header p  { font-size: 1rem; }
+      .profile-img { width: 100px; height: 100px; }
+      .name-highlight { padding: 8px 16px; }
+      .education, .learning, .projects, .soft-skills, .certifications {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="name-highlight">
+      <!-- Replace the src below with your local image path, e.g.: file:///C:/Users/namit/Downloads/NAMITHA.jpeg -->
+      <img src="C:\Users\namit\Downloads\namitha.jpeg" alt="M Namitha" class="profile-img">
+      <h1>M NAMITHA</h1>
+      <p>CSE (AI & ML)</p>
+      <p class="tagline">Young innovator harnessing AI & ML to craft intelligent solutions, Driven by Java, Python & C, delivering dynamic projects with fresh perspectives.</p>
+    </div>
+  </header>
+
+  <section>
+    <h2 class="section-title">Education</h2>
+    <div class="education">
+      <div>
+        <h3>Schooling</h3>
+        <p>Kendriya Vidyalaya No. 2 Golconda, Hyderabad</p>
+      </div>
+      <div>
+        <h3>Intermediate</h3>
+        <p>Villa Marie Junior College, Hyderabad</p>
+      </div>
+      <div>
+        <h3>Engineering</h3>
+        <p>G. Narayanamma Institute of Technology and Sciences, Hyderabad</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="section-title">Learning & Expertise</h2>
+    <div class="learning">
+      <div>
+        <h3>Learning Java using DSA</h3>
+        <p>Mastering Data Structures and Algorithms in Java.</p>
+      </div>
+      <div>
+        <h3>OOP in Java</h3>
+        <p>Strengthening foundation in Object-Oriented Programming.</p>
+      </div>
+      <div>
+        <h3>Beginner with Python</h3>
+        <p>Learning Python basics for data and web applications.</p>
+      </div>
+      <div>
+        <h3>Mastering C</h3>
+        <p>Deep dive into C programming for system-level coding.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="section-title">Ongoing Projects</h2>
+    <div class="projects">
+      <div>
+        <h3>Identification of Genome Strength</h3>
+        <p>Analyzing gene interaction strength using ML techniques.</p>
+      </div>
+      <div>
+        <h3>Portfolio Website</h3>
+        <p>A personal website to showcase projects, skills, and achievements.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="section-title">Soft Skills</h2>
+    <div class="soft-skills">
+      <div>
+        <h3>Communication</h3>
+        <p>Clear and effective team communication skills.</p>
+      </div>
+      <div>
+        <h3>Problem Solving</h3>
+        <p>Logical and innovative problem-solving approach.</p>
+      </div>
+      <div>
+        <h3>Adaptability</h3>
+        <p>Ability to adapt quickly to new technologies and challenges.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="section-title">Certifications</h2>
+    <div class="certifications">
+      <div>
+        <h3>DBMS - SCALER</h3
+      </div>
+      <div>
+        <h3>INTRO TO HTML & CSS - IBM</h3>
+      </div>
+	<div>
+<h3> INTRO TO ARTIFICIAL INTELLIGENCE - IBM </h3>
+	</div>
+    </div>
+  </section>
+
+  <section class="contact-info">
+    <h3>Contact Me</h3>
+    <p>Email: <a href="namithachinnu03@gmail.com">namithachinnu03@gmail.com</a></p>
+    <p>LinkedIn: <a href="www.linkedin.com/in/namitha-morri-94836a294">www.linkedin.com/in/namitha-morri-94836a294</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 M NAMITHA</p>
+  </footer>
+</body>
+</html>
